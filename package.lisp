@@ -1,4 +1,8 @@
 ;;;; package.lisp
 
 (defpackage #:abcl-big-decimals
-  (:use #:cl))
+  (:use #:cl)
+  (:export
+   :make-big-decimal
+   :divide
+   :big-decimal->string))
