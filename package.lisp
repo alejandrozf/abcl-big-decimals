@@ -5,4 +5,8 @@
   (:export
    :make-big-decimal
    :divide
-   :big-decimal->string))
+   :add
+   :multiply
+   :subtract
+   :big-decimal->string
+   :big-decimal->plain-string))
