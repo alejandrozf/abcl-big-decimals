@@ -32,3 +32,8 @@
   "Convert BIG-DECIMAL to a plain CL string"
   (let ((jmethod-instance (java:jmethod "java.math.BigDecimal" "toPlainString")))
     (java:jcall jmethod-instance big-decimal)))
+
+(defun pow (big-decimal n)
+  (let ((result (make-big-decimal 1)))
+    (dotimes (i n result)
+      (setf result (multiply big-decimal result)))))

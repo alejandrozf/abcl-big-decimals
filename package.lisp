@@ -8,5 +8,6 @@
    :add
    :multiply
    :subtract
+   :pow
    :big-decimal->string
    :big-decimal->plain-string))
