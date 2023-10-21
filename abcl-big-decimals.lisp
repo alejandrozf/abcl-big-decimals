@@ -33,6 +33,11 @@
   (let ((jmethod-instance (java:jmethod "java.math.BigDecimal" "toPlainString")))
     (java:jcall jmethod-instance big-decimal)))
 
+(defun big-decimal->double-float (big-decimal)
+  "Convert BIG-DECIMAL to a double-float value"
+  (let ((jmethod-instance (java:jmethod "java.math.BigDecimal" "doubleValue")))
+    (java:jcall jmethod-instance big-decimal)))
+
 (defun pow (big-decimal n)
   (let ((result (make-big-decimal 1)))
     (dotimes (i n result)

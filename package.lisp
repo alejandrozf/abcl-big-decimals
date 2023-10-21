@@ -10,4 +10,5 @@
    :subtract
    :pow
    :big-decimal->string
-   :big-decimal->plain-string))
+   :big-decimal->plain-string
+   :big-decimal->double-float))
