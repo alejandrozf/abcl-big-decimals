@@ -50,13 +50,10 @@
       big-dec-a big-dec-b)
      1))
 
-(defun read-big-decimal-1 (stream char)
-  (declare (ignore char))
-  (read stream t nil t))
 
-(defun read-big-decimal-2 (stream char)
+(defun read-big-decimal (stream char)
   (declare (ignore char))
   (abcl-big-decimals:make-big-decimal (read stream t nil t)))
 
-(set-macro-character #\_ #'read-big-decimal-1)
-(set-macro-character #\B #'read-big-decimal-2)
+
+(set-macro-character #\B #'read-big-decimal)

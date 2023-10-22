@@ -47,12 +47,14 @@ CL-USER>
 There is also a way to reader macro to create quickly Big decimal objects
 
 ```
-CL-USER> _B12
+CL-USER> B12
 #<java.math.BigDecimal 12 {3D1B473A}>
-CL-USER> _B0.12d0
+CL-USER> B0.12d0
 #<java.math.BigDecimal 0.119999999999999995559107901499.... {4E86AB45}>
-CL-USER> _B"0.121233"
+CL-USER> B"0.121233"
 #<java.math.BigDecimal 0.121233 {3CF0E3CF}>
+CL-USER> B0
+#<java.math.BigDecimal 0 {1A8502B7}>
 CL-USER>
 ```
 
