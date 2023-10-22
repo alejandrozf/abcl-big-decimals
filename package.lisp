@@ -11,4 +11,5 @@
    :pow
    :big-decimal->string
    :big-decimal->plain-string
-   :big-decimal->double-float))
+   :big-decimal->double-float)
+  (:shadow #:>))

@@ -42,3 +42,10 @@
   (let ((result (make-big-decimal 1)))
     (dotimes (i n result)
       (setf result (multiply big-decimal result)))))
+
+
+(defun > (big-dec-a big-dec-b)
+  (= (java:jcall
+      "compareTo"
+      big-dec-a big-dec-b)
+     1))
