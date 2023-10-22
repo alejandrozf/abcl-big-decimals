@@ -4,6 +4,7 @@
 
 A way to make calculations with Big Decimals in Common Lisp (on ABCL). Work in progress
 
+```
 CL-USER> (abcl-big-decimals:make-big-decimal 23234)
 
 #<java.math.BigDecimal 23234 {124A6BF1}>
@@ -41,6 +42,19 @@ CL-USER> (abcl-big-decimals:big-decimal->plain-string **)
 "150.3207004755979326418574956291764"
 
 CL-USER>
+```
+
+There is also a way to reader macro to create quickly Big decimal objects
+
+```
+CL-USER> _B12
+#<java.math.BigDecimal 12 {3D1B473A}>
+CL-USER> _B0.12d0
+#<java.math.BigDecimal 0.119999999999999995559107901499.... {4E86AB45}>
+CL-USER> _B"0.121233"
+#<java.math.BigDecimal 0.121233 {3CF0E3CF}>
+CL-USER>
+```
 
 ## License
 
