@@ -53,7 +53,7 @@
 
 (defun read-big-decimal (stream char)
   (declare (ignore char))
-  (abcl-big-decimals:make-big-decimal (read stream t nil t)))
+  `(abcl-big-decimals:make-big-decimal ,(read stream t nil t)))
 
 
 (set-macro-character #\B #'read-big-decimal)
