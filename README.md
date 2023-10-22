@@ -44,7 +44,7 @@ CL-USER> (abcl-big-decimals:big-decimal->plain-string **)
 CL-USER>
 ```
 
-There is also a way to reader macro to create quickly Big decimal objects (use with caution)
+There is also a way to reader macro to create quickly Big decimal objects (use with caution in the code)
 
 ```
 CL-USER> B12
